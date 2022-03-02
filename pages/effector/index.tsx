@@ -1,5 +1,5 @@
-import {decrementScore, incrementScore} from 'pages/effector/model/events';
-import {$score} from 'pages/effector/model/stores';
+import {decrementScore, incrementScore} from 'features/example/model/events';
+import {$score} from 'features/example/model/stores';
 import {ROUTES} from 'routes';
 import {Button} from 'ui/atoms/Button';
 import {useStore} from 'effector-react';

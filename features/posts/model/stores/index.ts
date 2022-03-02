@@ -1,7 +1,7 @@
 import {createStore, restore} from 'effector';
-import {getPostsFx} from 'pages/posts/model/effects';
-import {setMode} from 'pages/posts/model/events';
-import {Gate} from 'pages/posts/model/index';
+import {getPostsFx} from 'features/posts/model/effects';
+import {setMode} from 'features/posts/model/events';
+import {Gate} from 'features/posts/model/index';
 
 export const $mode = restore(setMode, 'LOADING');
 

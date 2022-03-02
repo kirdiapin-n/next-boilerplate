@@ -1,7 +1,7 @@
 import {forward} from 'effector';
 import {createGate} from 'effector-react';
-import {getPostsFx} from 'pages/posts/model/effects';
-import {getPosts, onClick, setMode} from 'pages/posts/model/events';
+import {getPostsFx} from 'features/posts/model/effects';
+import {getPosts, onClick, setMode} from 'features/posts/model/events';
 
 export const Gate = createGate();
 

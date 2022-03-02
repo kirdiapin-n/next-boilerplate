@@ -1,8 +1,8 @@
 import {useStore} from 'effector-react';
-import {PostsContainer} from 'pages/posts/containers/PostsContainer';
-import {$mode} from 'pages/posts/model/stores';
-import {Error} from 'pages/posts/ui/Error';
-import {Loader} from 'pages/posts/ui/Loader';
+import {PostsContainer} from 'features/posts/containers/PostsContainer';
+import {$mode} from 'features/posts/model/stores';
+import {Error} from 'features/posts/ui/Error';
+import {Loader} from 'features/posts/ui/Loader';
 import React from 'react';
 
 export const ContentContainer = () => {
