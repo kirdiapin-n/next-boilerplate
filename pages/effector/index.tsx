@@ -1,10 +1,10 @@
+import {useStore} from 'effector-react';
 import {decrementScore, incrementScore} from 'features/example/model/events';
 import {$score} from 'features/example/model/stores';
+import React from 'react';
 import {ROUTES} from 'routes';
 import {Button} from 'ui/atoms/Button';
-import {useStore} from 'effector-react';
-import Link from 'next/link';
-import React from 'react';
+import {NavLink} from 'ui/atoms/NavLink';
 
 const Effector = () => {
     const onDecrement = () => decrementScore();
@@ -19,7 +19,7 @@ const Effector = () => {
             <Button onClick={onDecrement}>{'Dec'}</Button>
 
             <div />
-            <Link href={ROUTES.HOME}>{'to home'}</Link>
+            <NavLink href={ROUTES.HOME}>{'to home'}</NavLink>
         </div>
     );
 };

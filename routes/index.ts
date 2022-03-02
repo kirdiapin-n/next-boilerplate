@@ -3,4 +3,8 @@ export const ROUTES = {
     ABOUT: '/about',
     EFFECTOR: '/effector',
     POSTS: '/posts',
-};
+} as const;
+
+const routesList = Object.values(ROUTES);
+
+export type TRoutes = typeof routesList[number];
