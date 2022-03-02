@@ -1,6 +1,6 @@
-import Link from 'next/link';
 import React from 'react';
 import {ROUTES} from 'routes';
+import {NavLink} from 'ui/atoms/NavLink';
 
 export default () => {
     return (
@@ -8,13 +8,13 @@ export default () => {
             <h1>{'Welcome to Next.js!'}</h1>
             <ul>
                 <li>
-                    <Link href={ROUTES.ABOUT}>{'Example transition to ABOUT'}</Link>
+                    <NavLink href={ROUTES.ABOUT}>{'Example transition to ABOUT'}</NavLink>
                 </li>
                 <li>
-                    <Link href={ROUTES.EFFECTOR}>{'Example transition to EFFECTOR example'}</Link>
+                    <NavLink href={ROUTES.EFFECTOR}>{'Example transition to EFFECTOR example'}</NavLink>
                 </li>
                 <li>
-                    <Link href={ROUTES.POSTS}>{'to posts'}</Link>
+                    <NavLink href={ROUTES.POSTS}>{'to posts'}</NavLink>
                 </li>
             </ul>
         </div>

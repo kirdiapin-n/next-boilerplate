@@ -1,11 +1,11 @@
 import {useGate} from 'effector-react';
-import Link from 'next/link';
 import {ContentContainer} from 'features/posts/containers/ContentContainer';
 import {Gate} from 'features/posts/model';
 import {onClick} from 'features/posts/model/events';
 import React from 'react';
 import {ROUTES} from 'routes';
 import {Button} from 'ui/atoms/Button';
+import {NavLink} from 'ui/atoms/NavLink';
 
 export default () => {
     useGate(Gate);
@@ -20,7 +20,7 @@ export default () => {
 
             <ContentContainer />
 
-            <Link href={ROUTES.HOME}>{'to home'}</Link>
+            <NavLink href={ROUTES.HOME}>{'to home'}</NavLink>
         </div>
     );
 };
