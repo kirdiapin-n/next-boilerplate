@@ -1,4 +1,4 @@
-import {decrementScore, incrementScore} from '@/pages/effector/model/events';
+import {decrementScore, incrementScore} from 'pages/effector/model/events';
 import {createStore} from 'effector';
 
 export const $score = createStore<number>(0)
