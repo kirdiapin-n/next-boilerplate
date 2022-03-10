@@ -5,7 +5,7 @@ import {Gate} from 'features/posts/model/index';
 
 export const $mode = restore(setMode, 'LOADING');
 
-type TPost = {
+export type TPost = {
     body: string;
     id: number;
     title: string;

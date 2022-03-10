@@ -1,11 +1,11 @@
 import Link from 'next/link';
 import React from 'react';
-import {TRoutes} from 'routes';
+import {TDeepRoutes, TRoutes} from 'routes';
 import style from './NavLink.module.css';
 
 type TProps = {
     children: React.ReactNode;
-    href: TRoutes;
+    href: TRoutes | TDeepRoutes;
 };
 export const NavLink = React.memo(({children, ...props}: TProps) => {
     return (

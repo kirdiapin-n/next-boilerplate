@@ -7,4 +7,5 @@ export const ROUTES = {
 
 const routesList = Object.values(ROUTES);
 
+export type TDeepRoutes = `/posts/${number}`;
 export type TRoutes = typeof routesList[number];
