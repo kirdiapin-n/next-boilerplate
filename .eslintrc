@@ -54,6 +54,7 @@
       {"blankLine": "always", "prev": "*", "next": "return"},
       {"blankLine": "always", "prev": "import", "next": "export"},
       {"blankLine": "any", "prev": ["const", "let", "var"], "next": ["const", "let", "var"]}
-    ]
+    ],
+    "semi": "error"
   }
 }
